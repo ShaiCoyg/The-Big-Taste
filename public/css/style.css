@@ -395,4 +395,14 @@ footer {
     height: 300px;
     width: 300px;
   }
+
+  .divider {
+    display: block;
+  }
+
+  .divider:before,
+  .divider:after {
+    content: "";
+    flex: 1;
+  }
 }
