@@ -372,7 +372,7 @@ footer {
 
   .for-more-span {
     height: 100px;
-    width: 200px;
+    width: 300px;
   }
 
   .for-more {
@@ -389,5 +389,10 @@ footer {
 
   .button-76 {
     margin-right: 0;
+  }
+
+  img.main-page-img {
+    height: 300px;
+    width: 300px;
   }
 }
