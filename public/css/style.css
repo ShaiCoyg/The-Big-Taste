@@ -189,46 +189,6 @@ h2 {
   display: flex;
 }
 
-@media (max-width: 1024px) {
-  .intro-text {
-    font-size: 13px;
-    height: 200px;
-    width: 350px;
-  }
-
-  h2 {
-    font-size: 47px;
-  }
-
-  .search-bar-form input {
-    height: 70px;
-    width: 350px;
-    font-size: 18px;
-  }
-
-  .intro {
-    height: 600px;
-  }
-
-  .search-bar-form select {
-    height: 70px;
-    width: 70px;
-    padding: 7px 0;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    margin-right: -305px;
-  }
-
-  .for-more-span {
-    height: 200px;
-    width: 200px;
-  }
-
-  .for-more {
-    font-size: 35px;
-  }
-}
-
 .divider:before,
 .divider:after {
   content: "";
@@ -377,4 +337,44 @@ footer {
   color: white;
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 1024px) {
+  .intro-text {
+    font-size: 13px;
+    height: 200px;
+    width: 350px;
+  }
+
+  h2 {
+    font-size: 47px;
+  }
+
+  .search-bar-form input {
+    height: 70px;
+    width: 350px;
+    font-size: 18px;
+  }
+
+  .intro {
+    height: 600px;
+  }
+
+  .search-bar-form select {
+    height: 70px;
+    width: 70px;
+    padding: 7px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-right: -305px;
+  }
+
+  .for-more-span {
+    height: 200px;
+    width: 200px;
+  }
+
+  .for-more {
+    font-size: 35px;
+  }
 }
