@@ -118,7 +118,6 @@ h1:hover {
 .search-bar-form {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -189,6 +188,16 @@ h2 {
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .intro-text {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
 .divider:before,
 .divider:after {
   content: "";
@@ -238,6 +247,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
   flex-direction: row;
   padding-bottom: 10px;
   padding-top: 5px;
