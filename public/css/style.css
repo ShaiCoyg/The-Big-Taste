@@ -193,7 +193,7 @@ h2 {
 .divider:before,
 .divider:after {
   content: "";
-  flex: 0.5;
+  flex: 2;
 }
 
 .donotcross {
