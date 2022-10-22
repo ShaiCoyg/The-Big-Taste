@@ -190,11 +190,19 @@ h2 {
 
 @media (max-width: 1024px) {
   .intro-text {
-    font-size: 14px;
+    font-size: 13px;
+    height: 200px;
+    width: 350px;
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 45px;
+  }
+
+  .search-bar-form input {
+    height: 70px;
+    width: 500px;
+    font-size: 18px;
   }
 }
 
