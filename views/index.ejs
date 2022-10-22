@@ -1,11 +1,36 @@
 <%- include('partials/intro.ejs')%>
-<h2 class="divider donotcross donotcross-first">מתכונים חדשים</h2>
-<%- include('partials/recipeGrid', { recipes: recipesNew, large: true}) %>
-<h2 class="divider donotcross donotcross-popular">מתכונים פופולריים</h2>
-<%- include('partials/recipeGrid', { recipes: popularRecipes, large: true}) %>
-<h2 class="divider donotcross donotcross-meat">מתכונים בשריים</h2>
-<%- include('partials/recipeGrid', { recipes: meatRecipes, large: true}) %>
-<h2 class="divider donotcross donotcross-dairy">מתכונים חלביים</h2>
-<%- include('partials/recipeGrid', { recipes: dairyRecipes, large: true}) %>
+
+<h2 class="divider donotcross donotcross-first">
+  <a href="https://thebigtaste.herokuapp.com/recipes">מתכונים חדשים</a>
+</h2>
+<%- include('partials/recipeGrid', { recipes: recipesNew, large: true, type:
+"https://thebigtaste.herokuapp.com/recipes"}) %>
+
+<h2 class="divider donotcross donotcross-popular">
+  <a href="https://thebigtaste.herokuapp.com/recipes">מתכונים פופולריים</a>
+</h2>
+<%- include('partials/recipeGrid', { recipes: popularRecipes, large: true, type:
+"https://thebigtaste.herokuapp.com/recipes"}) %>
+
+<h2 class="divider donotcross donotcross-meat">
+  <a
+    href="https://thebigtaste.herokuapp.com/recipes?title=&tags=+%D7%91%D7%A9%D7%A8%D7%99"
+    >מתכונים בשריים</a
+  >
+</h2>
+<%- include('partials/recipeGrid', { recipes: meatRecipes, large: true, type:
+"https://thebigtaste.herokuapp.com/recipes?title=&tags=+%D7%91%D7%A9%D7%A8%D7%99"})%>
+
+<h2 class="divider donotcross donotcross-dairy">
+  <a
+    href="https://thebigtaste.herokuapp.com/recipes?title=&tags=+%D7%97%D7%9C%D7%91%D7%99"
+    >מתכונים חלביים</a
+  >
+</h2>
+
+<%- include('partials/recipeGrid', { recipes: dairyRecipes, large: true, type:
+"https://thebigtaste.herokuapp.com/recipes?title=&tags=+%D7%97%D7%9C%D7%91%D7%99"})
+%>
+
 <h2 class="divider donotcross donotcross-contact">צרו קשר</h2>
 <%- include('partials/contact.ejs')%>
