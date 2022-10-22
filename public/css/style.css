@@ -199,7 +199,7 @@ h2 {
   overflow: hidden;
   align-items: center;
   background: hsl(50, 100%, 50%);
-  color: black;
+  color: white;
   height: 2em;
   line-height: 2em;
   font-weight: bold;
@@ -212,22 +212,18 @@ h2 {
 
 .donotcross-contact {
   background: hsl(243, 100%, 40%);
-  color: white;
 }
 
 .donotcross-popular {
   background: hsl(114, 97%, 46%);
-  color: white;
 }
 
 .donotcross-meat {
   background: hsl(0, 100%, 50%);
-  color: white;
 }
 
 .donotcross-dairy {
   background: hsl(242, 75%, 81%);
-  color: white;
 }
 
 .donotcross:before,
@@ -256,7 +252,7 @@ h2 {
 }
 
 img.main-page-img {
-  border-radius: 40%;
+  border-radius: 50%;
   padding-left: 5px;
   padding-right: 5px;
 }
