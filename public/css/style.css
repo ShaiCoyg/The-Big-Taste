@@ -380,10 +380,7 @@ footer {
   }
 
   .search-bar-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
 
   .search-bar-form select {
