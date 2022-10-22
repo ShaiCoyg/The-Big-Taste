@@ -385,4 +385,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
+  .search-bar-form select {
+    margin-right: 0;
+  }
+
+  .button-76 {
+    margin-right: 0;
+  }
 }
