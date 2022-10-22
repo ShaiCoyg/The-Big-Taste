@@ -201,9 +201,22 @@ h2 {
 
   .search-bar-form input {
     height: 70px;
-    width: 500px;
+    width: 400px;
     font-size: 18px;
   }
+
+  .intro {
+    padding-bottom: 50px;
+  }
+
+  .search-bar-form select {
+    height: 70px;
+    width: 70px;
+    padding: 7px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-right: -305px;
+
 }
 
 .divider:before,
