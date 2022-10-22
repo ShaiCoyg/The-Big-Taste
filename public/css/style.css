@@ -197,7 +197,7 @@ h2 {
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 47px;
   }
 
   .search-bar-form input {
@@ -217,7 +217,7 @@ h2 {
     border-radius: 3px;
     border: 1px solid #ccc;
     margin-right: -305px;
-
+  }
 }
 
 .divider:before,
@@ -354,6 +354,7 @@ textarea.feedback-input {
   margin-top: -4px;
   font-weight: 700;
 }
+
 [type="submit"]:hover {
   background: #cc4949;
 }
