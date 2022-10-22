@@ -207,7 +207,7 @@ h2 {
   }
 
   .intro {
-    height: 800px;
+    height: 600px;
   }
 
   .search-bar-form select {
@@ -222,6 +222,10 @@ h2 {
   .for-more-span {
     height: 200px;
     width: 200px;
+  }
+
+  .for-more {
+    font-size: 35px;
   }
 }
 
