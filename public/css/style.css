@@ -378,4 +378,11 @@ footer {
   .for-more {
     font-size: 35px;
   }
+
+  .search-bar-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
