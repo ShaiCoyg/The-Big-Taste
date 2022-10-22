@@ -218,6 +218,11 @@ h2 {
     border: 1px solid #ccc;
     margin-right: -305px;
   }
+
+  .for-more-span {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 .divider:before,
