@@ -1,0 +1,47 @@
+<% const tags = [' חלבי', ' בשרי', ' פרווה', ' צמחוני', ' טבעוני', ' ללא גלוטן']
+%>
+<div class="intro">
+  <h1>הטעם הגדול</h1>
+  <div class="intro-text">
+    <Span class="intro-text-first"
+      ><span class="hello">שלום לכולם/ן!</span> אני לירז</Span
+    >
+    <br />
+    <span
+      >מגיל קטן אני אוהבת לבשל ולאחרונה החלטתי לתעד ולשמור את הבישולים שלי באתר
+      ייעודי ולחלוק במתכונים שאולי תאהבו גם!</span
+    >
+    <br />
+    <span
+      >אני אוהבת להכין המון סוגי אוכל ורוב המתכונים שלי הגיעו למה שהם בעזרת
+      ניסוי וטעייה של שנים, עדיין אוהבת לאלתר ותמיד פתוחה לרעיונות חדשים!</span
+    >
+    <br />
+    <span class="appetite">בתיאבון לכולנו:)</span>
+  </div>
+  <div class="search-bar">
+    <form class="search-bar-form" action="/recipes" method="GET">
+      <div>
+        <input
+          class="w3-input"
+          type="text"
+          name="title"
+          placeholder="חיפוש מתכונים..."
+        />
+      </div>
+      <div>
+        <select name="tags">
+          <% tags.forEach(t => { %>
+            <% if (t === searchOptions.tags) { %>
+                <option selected label="<%= t %>" value="<%= t %>"></option>
+                <% } else { %>
+                        <option value="<%= t %>"><%= t %></option>
+                        <% } %>
+                    <% }) %>
+    </select>
+        </select>
+      </div>
+      <button class="button-76" type="submit"><span>חיפוש</span></button>
+    </form>
+  </div>
+</div>

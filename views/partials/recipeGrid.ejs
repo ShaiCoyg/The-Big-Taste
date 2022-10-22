@@ -1,0 +1,14 @@
+<div class="img-row">
+  <% recipes.forEach(recipe => { %>
+  <a class="item-in-row" href="/recipes/<%= recipe.id %>">
+    <div class="recipe-title-main-page"><%= recipe.title %></div>
+    <img
+      class="main-page-img"
+      src="<%= recipe.posterImagePath %>"
+      height="200"
+      width="200"
+    />
+  </a>
+  <% }) %>
+  <a class="for-more" href="#">עוד>></a>
+</div>

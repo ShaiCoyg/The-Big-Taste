@@ -1,0 +1,27 @@
+<% const tags = [' חלבי', ' בשרי', ' פרווה', ' צמחוני', ' טבעוני', ' ללא גלוטן']
+%>
+<h2>חפש מתכון</h2>
+<form action="/recipes" method="GET">
+  <div>
+    <label>כותרת</label>
+    <input type="text" name="title" value="<%= searchOptions.title %>" />
+  </div>
+  <div>
+    <label>תגיות</label>
+    <select name="tags">
+      <% tags.forEach(t => { %> <% if (t === searchOptions.tags) { %>
+      <option selected label="<%= t %>" value="<%= t %>"></option>
+      <% } else { %>
+      <option value="<%= t %>"><%= t %></option>
+      <% } %> <% }) %>
+    </select>
+  </div>
+  <button type="submit">חיפוש</button>
+</form>
+<div>
+  <% recipes.forEach(recipe => { %>
+  <a href="/recipes/<%= recipe.id %>"
+    ><img height="150" width="100" src="<%= recipe.posterImagePath %>" />
+  </a>
+  <% }) %>
+</div>

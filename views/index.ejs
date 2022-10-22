@@ -1,0 +1,11 @@
+<%- include('partials/intro.ejs')%>
+<h2 class="divider donotcross donotcross-first">מתכונים חדשים</h2>
+<%- include('partials/recipeGrid', { recipes: recipesNew, large: true}) %>
+<h2 class="divider donotcross donotcross-popular">מתכונים פופולריים</h2>
+<%- include('partials/recipeGrid', { recipes: popularRecipes, large: true}) %>
+<h2 class="divider donotcross donotcross-meat">מתכונים בשריים</h2>
+<%- include('partials/recipeGrid', { recipes: meatRecipes, large: true}) %>
+<h2 class="divider donotcross donotcross-dairy">מתכונים חלביים</h2>
+<%- include('partials/recipeGrid', { recipes: dairyRecipes, large: true}) %>
+<h2 class="divider donotcross donotcross-contact">צרו קשר</h2>
+<%- include('partials/contact.ejs')%>

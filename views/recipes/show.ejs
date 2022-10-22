@@ -1,0 +1,9 @@
+<h2> <%= recipe.title %> </h2>
+<img height="150" width="100" src="<%= recipe.posterImagePath %>">
+<div>תגיות: <%= recipe.tags %> </div>
+<div>זמן הכנה: <%= recipe.prepTime %> </div>
+<div>זמן בישול: <%= recipe.cookTime %> </div>
+<div>רכיבים: <%= recipe.ingredients %> </div>
+<div>אופן הכנה: <%= recipe.directions %> </div>
+<a href="/recipes/<%= recipe.id %>/edit">Edit</a>
+<%- include('../partials/deleteForm', { url: `/recipes/${recipe.id}`}) %>

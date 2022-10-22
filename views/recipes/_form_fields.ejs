@@ -1,0 +1,35 @@
+<% const tags = [' חלבי', ' בשרי', ' פרווה', ' צמחוני', ' טבעוני', ' ללא גלוטן'] %>
+<div>
+    <label>כותרת: </label>
+    <input type="text" name="title" value="<%= recipe.title %>" required>
+</div>
+<div>
+    תגיות: 
+    <% tags.forEach(t => { %>
+        <label><input name="tags" type="checkbox" value="<%= t %>"><%= t %></label>
+        <% }) %>
+</div>
+<div>
+    <label>זמן הכנה: </label>
+    <input type="number" name="prepTime" min="1" value="<%= recipe.prepTime %>" required>    
+</div>
+<div>
+    <label>זמן בישול: </label>
+    <input type="number" name="cookTime" min="1" value="<%= recipe.cookTime %>" required>    
+</div>
+<div>
+    <label>רכיבים: </label>
+    <input type="text" name="ingredients" value="<%= recipe.ingredients %>" required>    
+</div>
+<div>
+    <label>אופן הכנה: </label>
+    <input type="text" name="directions" value="<%= recipe.directions %>" required>    
+</div>
+    <label>תמונה ראשית: </label>
+    <input type="file" class="filepond" name="poster" required>    
+</div>
+
+
+
+
+

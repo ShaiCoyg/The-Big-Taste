@@ -1,0 +1,7 @@
+<H2>ערוך מתכון</H2>
+<form action="/recipes/<%= recipe.id %>?_method=PUT" method="POST">
+    <%- include('_form_fields') %>
+    <a href="/recipes">cancel</a>
+    <button type="submit">עדכן</button>
+</form>
+
