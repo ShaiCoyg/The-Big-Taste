@@ -379,6 +379,11 @@ footer {
     font-size: 40px;
   }
 
+  .recipe-details img {
+    height: 350px;
+    width: 350px;
+  }
+
   .search-bar-form input {
     height: 70px;
     width: 200px;
